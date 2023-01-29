@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Messages</title>
+        <link rel="icon" type="image" href="">
+        <style>
+            body{
+                text-align: center;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <input id="message2"type="text" placeholder="Enter message"><br>
+        <button id="send2" type="button">Send</button>
+        <h1 id="receive2"></h1>
+
+        <script>
+        document.getElementById("send2").onclick=()=>{
+            let message2= document.getElementById("message2").value;
+            sessionStorage.setItem("m2", message2);
+        }</script>
+    </body>
+</html>
